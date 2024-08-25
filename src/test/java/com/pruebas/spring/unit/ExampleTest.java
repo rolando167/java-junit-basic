@@ -110,6 +110,9 @@ public class ExampleTest {
         assertEquals("Delantero", result.get(0).getPosition());
         assertEquals(6, result.size());
         assertInstanceOf(Player.class, result.get(0));
+        Long[] expectedResult = {2L, 4L, 3L, 1L};
+        Long[] actualResult = {2L, 4L, 3L, 1L};
+        assertArrayEquals(expectedResult, actualResult);
         // verify(this.playerRepository).findAll();
     }
 
