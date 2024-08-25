@@ -78,6 +78,8 @@ public class ExampleTest {
 
         // Then
         assertTrue(result);
+        assertEquals(3, countries.size());
+        assertEquals("Colombia", countries.get(0).toString());
     }
 
     @Test
