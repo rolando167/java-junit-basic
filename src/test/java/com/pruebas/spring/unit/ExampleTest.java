@@ -1,7 +1,9 @@
 package com.pruebas.spring.unit;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.verify;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -80,6 +82,33 @@ public class ExampleTest {
         assertTrue(result);
         assertEquals(3, countries.size());
         assertEquals("Colombia", countries.get(0).toString());
+    }
+
+    @Test
+    public void ArrayLisExample1Test() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        list.set(1, 1000);
+        assertEquals(list.get(1), 1000);
+    }
+
+    @Test
+    public void ArrayLisExample2Test() {
+        // When
+        List<Player> result = Arrays.asList(
+                new Player(1L, "Lionel Messi", "Inter Miami", "Delantero"),
+                new Player(2L, "Cristiano Ronaldo", "Al Nassr", "Delantero"),
+                new Player(3L, "Neymar Jr.", "Paris Saint-Germain", "Delantero"),
+                new Player(4L, "Kylian Mbappé", "Paris Saint-Germain", "Delantero"),
+                new Player(5L, "Kevin De Bruyne", "Manchester City", "Volante"),
+                new Player(6L, "Virgil van Dijk", "Liverpool", "Defensa"));
+
+        // Then
+        assertNotNull(result);
+        assertFalse(result.isEmpty());
+        assertEquals("Lionel Messi", result.get(0).getName());
+        assertEquals("Inter Miami", result.get(0).getTeam());
+        assertEquals("Delantero", result.get(0).getPosition());
+        // verify(this.playerRepository).findAll();
     }
 
     @Test

@@ -71,7 +71,8 @@ Please make sure to update tests as appropriate.
 # returns 'words'
  * https://github.com/UnProgramadorNaceOfficial/java-test-unitarios
  * YT - 🔍🛠️ Dominando los Test Unitarios en JAVA | JUnit 🚀💻
- * 
+ * https://stackoverflow.com/questions/72005964/java-stream-from-listobject-to-a-listmydto
+ * https://github.com/UnProgramadorNaceOfficial/java-mock-testing/blob/main/MockFinish/MockTestingProject/src/test/java/org/mock/service/PlayerServiceImplTest.java
 
 ```
 
