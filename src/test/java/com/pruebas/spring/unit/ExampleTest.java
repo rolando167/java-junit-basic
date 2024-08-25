@@ -108,6 +108,8 @@ public class ExampleTest {
         assertEquals("Lionel Messi", result.get(0).getName());
         assertEquals("Inter Miami", result.get(0).getTeam());
         assertEquals("Delantero", result.get(0).getPosition());
+        assertEquals(6, result.size());
+        assertInstanceOf(Player.class, result.get(0));
         // verify(this.playerRepository).findAll();
     }
 
