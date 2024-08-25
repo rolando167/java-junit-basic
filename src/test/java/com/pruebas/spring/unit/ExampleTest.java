@@ -70,7 +70,7 @@ public class ExampleTest {
     @Test
     public void testContieneElemento() {
         // Given
-        List<String> countries = List.of("Colombia", "Mexico", "Peru");
+        List<String> countries = List.of("Colombia", "Mexico", "Chile");
         String country = "Colombia";
 
         // When
